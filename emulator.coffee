@@ -38,6 +38,7 @@ socket.on 'open', ->
     keyCode = charToKeyCode[ch]
     if keyCode
       buttonPressedMessage = JSON.stringify { command: "enoceandata", data: buttonPressedData(keyCode, BUTTON_ADDRESS_ARRAY) }
+      socket.send buttonPressedMessage
       console.log "Pressed", ch
     else
       console.log "Unmapped character", ch
