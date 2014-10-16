@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/houmio/button-emulator",
   "dependencies": {
-    "ws": "^0.4.32"
+    "ws": "^0.4.32",
+    "baconjs": "^0.7.23",
+    "lodash": "^2.4.1"
   }
 }
