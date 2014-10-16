@@ -4,7 +4,7 @@ Bacon = require('baconjs')
 _ = require('lodash')
 
 SERVER = process.env.HORSELIGHTS_SERVER || "ws://localhost:3000"
-SITEKEY = process.env.HORSELIGHTS_SITEKEY || "devsite"
+SITEKEY = process.env.HORSELIGHTS_SITEKEY || "devsite"
 BUTTON_ADDRESS = process.env.HORSELIGHTS_BUTTON_ADDRESS || "ff:ff:ff:ff"
 BUTTON_ADDRESS_ARRAY = BUTTON_ADDRESS.split(":").map (s) -> parseInt(s, 16)
 
